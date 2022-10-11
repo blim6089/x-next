@@ -1,3 +1,4 @@
+@import url(./font.scss);
 @import url(./common.scss);
 
 .container {
@@ -12,5 +13,87 @@
     display: flex;
     align-items: center;
     margin-bottom: 43px;
+
+    span {
+      background: #434343;
+      width: 3px;
+      height: 98px;
+      margin: 0 52px;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+
+    .title {
+      font-size: 38px;
+      line-height: 50px;
+      color: #ee721a;
+      font-weight: 700;
+      margin-bottom: 28px;
+    }
+
+    .description {
+      font-size: 25px;
+      line-height: 50px;
+      color: #3c4f5e;
+      font-weight: 400;
+      margin-bottom: 28px;
+    }
+
+    .tip {
+      font-size: 21px;
+      line-height: 50px;
+      text-decoration: underline;
+      color: #ee721a;
+      font-weight: 500;
+      margin-bottom: 38px;
+    }
+
+    .input-container {
+      width: 374px;
+      height: 80px;
+      border-radius: 41px;
+      background-color: #ffffff;
+      border: 2px solid #dddddd;
+      display: flex;
+      overflow: hidden;
+      margin-bottom: 28px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 76px;
+        height: 76px;
+        background: #dddddd;
+        flex-shrink: 0;
+        border-radius: 38px;
+        font-size: 21px;
+        line-height: 50px;
+        color: #3c4f5e;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        font-size: 21px;
+        letter-spacing: 1px;
+        line-height: 50px;
+        color: #434343;
+        font-weight: 500;
+      }
+    }
+
+    .continue {
+      width: 374px;
+      font-weight: 700;
+    }
   }
 }
