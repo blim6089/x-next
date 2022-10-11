@@ -1,0 +1,14 @@
+@import url(./common.scss);
+.container {
+  width: 100%;
+  max-width: 916px;
+  margin: 123px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 43px;
+}/*# sourceMappingURL=login.css.map */

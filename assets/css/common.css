@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 45px;
+  border-top-right-radius: 0;
+  height: 90px;
+  display: inline-flex;
+  padding: 0 50px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 29px;
+  color: #fff;
+}
+
+.btn-dark {
+  border: none;
+  box-shadow: 20.074px 22.294px 25.5px rgba(0, 0, 0, 0.13);
+  background-color: #374955;
+}
+
+.btn-warning {
+  background-color: #ee721a;
+  border: 2px solid #fff;
+}
+
+body * {
+  font-family: "Poppins", sans-serif;
+}/*# sourceMappingURL=common.css.map */

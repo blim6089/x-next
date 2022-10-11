@@ -1,0 +1,85 @@
+@import url("./font.scss");
+@import url("./common.scss");
+
+body {
+  background: #ee721a;
+
+  .container {
+    max-width: 1524px;
+    margin: 116px auto 0;
+    position: relative;
+
+    .header {
+      display: flex;
+      align-items: center;
+
+      span {
+        width: 1.5px;
+        background: #000;
+        height: 100px;
+        margin: 0 36px;
+      }
+    }
+
+    .body {
+      width: 100%;
+      max-width: 1008px;
+      margin-bottom: 100px;
+
+      .title {
+        font-weight: 700;
+        font-size: 100px;
+        color: #fff;
+        line-height: 110px;
+        margin-bottom: 60px;
+
+        span {
+          color: #374955;
+        }
+      }
+
+      .description {
+        font-size: 33px;
+        color: #fff;
+        margin-bottom: 56px;
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .buy_bundle {
+          width: 374px;
+          height: 90px;
+          font-weight: 700;
+          margin-right: 28px;
+        }
+
+        .view_my_bundles {
+          width: 374px;
+          height: 90px;
+        }
+      }
+    }
+
+    .cloud {
+      width: 100%;
+      height: 210px;
+      overflow: hidden;
+    }
+
+    .rocket {
+      position: absolute;
+      right: 0;
+      top: 80px;
+    }
+  }
+}

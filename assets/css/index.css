@@ -1,0 +1,71 @@
+@import url("./font.scss");
+@import url("./common.scss");
+body {
+  background: #ee721a;
+}
+body .container {
+  max-width: 1524px;
+  margin: 116px auto 0;
+  position: relative;
+}
+body .container .header {
+  display: flex;
+  align-items: center;
+}
+body .container .header span {
+  width: 1.5px;
+  background: #000;
+  height: 100px;
+  margin: 0 36px;
+}
+body .container .body {
+  width: 100%;
+  max-width: 1008px;
+  margin-bottom: 100px;
+}
+body .container .body .title {
+  font-weight: 700;
+  font-size: 100px;
+  color: #fff;
+  line-height: 110px;
+  margin-bottom: 60px;
+}
+body .container .body .title span {
+  color: #374955;
+}
+body .container .body .description {
+  font-size: 33px;
+  color: #fff;
+  margin-bottom: 56px;
+}
+body .container .body .actions {
+  display: flex;
+  align-items: center;
+}
+body .container .body .actions a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+body .container .body .actions .buy_bundle {
+  width: 374px;
+  height: 90px;
+  font-weight: 700;
+  margin-right: 28px;
+}
+body .container .body .actions .view_my_bundles {
+  width: 374px;
+  height: 90px;
+}
+body .container .cloud {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+}
+body .container .rocket {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}/*# sourceMappingURL=index.css.map */
