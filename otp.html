@@ -4,14 +4,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>One time password confirmation</title>
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/otp.css" />
   </head>
   <body>
     <div class="container card">
       <p class="title">One-time PIN (OTP)</p>
       <p class="description">
-        Please provide mobile number or email address where we can send your
-        OTP.
+        Please provide mobile number or<br />
+        email address where we can send your OTP.
       </p>
+      <div class="checkboxs">
+        <div class="radio">
+          <input type="radio" id="mobile" name="flag" value="mobile" checked />
+          <label for="mobile">Mobile number</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="email" name="flag" value="email" />
+          <label for="email">Email address</label>
+        </div>
+      </div>
+      <input type="text" placeholder="Mobile number" />
+      <a href="#" class="btn btn-warning send">Send OTP</a>
     </div>
   </body>
 </html>

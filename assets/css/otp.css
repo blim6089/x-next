@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  align-items: center;
+}
+body .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 817px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container .title {
+  font-size: 38px;
+  line-height: 50px;
+  color: #ee721a;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+body .container .description {
+  font-size: 25px;
+  line-height: 30px;
+  color: #3c4f5e;
+  text-align: center;
+  margin-bottom: 57px;
+}
+body .container .checkboxs {
+  display: flex;
+  margin: 0 -20px;
+  margin-bottom: 48px;
+}
+body .container .checkboxs .radio {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+body .container .checkboxs .radio input {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  margin-right: 17px;
+}
+body .container .checkboxs .radio label {
+  font-size: 25px;
+  line-height: 25px;
+  color: #3c4f5e;
+}
+body .container > input {
+  width: 481px;
+  height: 81px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #999999;
+  font-weight: 500;
+  padding: 0 50px;
+  margin-bottom: 48px;
+}
+body .container .send {
+  width: 483px;
+  height: 86px;
+  font-weight: 700;
+}/*# sourceMappingURL=otp.css.map */
