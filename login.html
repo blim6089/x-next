@@ -18,7 +18,7 @@
         <p class="description">
           Please validate your prepaid line by entering the 5-number.
         </p>
-        <a href="#" class="tip">Where can I find my 5 - numbers?</a>
+        <a id="tip">Where can I find my 5 - numbers?</a>
         <div class="input-container">
           <span>5</span>
           <input type="text" placeholder="123456789" />
@@ -26,5 +26,32 @@
         <a href="#" class="btn btn-warning continue">Continue</a>
       </div>
     </div>
+
+    <div id="modal">
+      <div class="modal-container">
+        <img src="./assets/images/info.png" class="info" alt="" />
+        <p class="title">What is a B-number and how do I find it?</p>
+        <p class="description">
+          Your service or B-number is a
+          <span>10-digit reference number</span> that is linked to your
+          Openserve connection at a specific address, such as your home or
+          business. This number helps us to identify your line and allows us to
+          assist you more effectively when you want to upgrade your line, or if
+          your line needs repair, for example.
+        </p>
+        <div class="password">
+          <img src="./assets/images/password.png" alt="" />
+        </div>
+        <p class="tip">
+          You can find it to your Openserve ONT / WIFI device.
+        </p>
+        <p class="hint">
+          If you're having trouble locating your Openserve Fibre service number please contact your internet service provider for assistance.
+        </p>
+        <button id="close" class="btn btn-warning">Close</button>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

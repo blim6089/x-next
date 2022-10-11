@@ -44,13 +44,14 @@
       margin-bottom: 28px;
     }
 
-    .tip {
+    #tip {
       font-size: 21px;
       line-height: 50px;
       text-decoration: underline;
       color: #ee721a;
       font-weight: 500;
       margin-bottom: 38px;
+      cursor: pointer;
     }
 
     .input-container {
@@ -94,6 +95,87 @@
     .continue {
       width: 374px;
       font-weight: 700;
+    }
+  }
+}
+
+#modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #00000050;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+
+  .modal-container {
+    width: 1429px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    box-shadow: 0.077px 8.329px 43.5px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding: 43px 103px 50px;
+
+    .info {
+      margin-bottom: 50px;
+    }
+
+    .title {
+      font-size: 42px;
+      color: #ee721a;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .description {
+      font-size: 25px;
+      line-height: 42px;
+      color: #374955;
+      text-align: center;
+      margin-bottom: 28px;
+
+      span {
+        font-weight: 700;
+        color: #ee721a;
+      }
+    }
+
+    .password {
+      display: flex;
+      background: #ddd;
+      border-radius: 100px;
+      margin-bottom: 26px;
+    }
+
+    .tip {
+      font-size: 25px;
+      line-height: 42px;
+      color: #ee721a;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .hint {
+      font-size: 25px;
+      line-height: 42px;
+      color: #374955;
+      text-align: center;
+      margin-bottom: 33px;
+    }
+
+    #close {
+      width: 377px;
+      height: 86px;
     }
   }
 }
