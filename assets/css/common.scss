@@ -1,3 +1,5 @@
+@import url("./font.scss");
+
 body {
   margin: 0;
 }
@@ -46,3 +48,107 @@ p {
   background-color: #ffffff;
 }
 
+.wizard {
+  .wizard-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 123px 20px 52px;
+
+    span {
+      width: 1px;
+      height: 98px;
+      background: #434343;
+      margin: 0 52px;
+    }
+  }
+
+  .wizard-steps {
+    background-color: #f1f1f1;
+    padding: 62px 60px 69px;
+    display: flex;
+    justify-content: center;
+
+    .wizard-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 48px;
+      position: relative;
+      padding-bottom: 80px;
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 96px;
+        border: 1px dashed #374955;
+        top: 80px;
+        left: 158px;
+      }
+
+      .icon {
+        width: 158px;
+        height: 158px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #374955;
+        position: relative;
+
+        .plus {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          position: absolute;
+          background: #fff;
+          border: 3px solid #ee721a;
+          top: 0;
+          right: 20px;
+        }
+
+        .active {
+          display: none;
+        }
+      }
+
+      .label {
+        width: max-content;
+        position: absolute;
+        font-size: 25px;
+        line-height: 50px;
+        color: #374955;
+        bottom: 0;
+      }
+
+      &.active {
+        .icon {
+          background-color: #ffffff;
+          border: 3px solid #ee721a;
+
+          .active {
+            display: inline;
+          }
+
+          .normal {
+            display: none;
+          }
+        }
+
+        .label {
+          font-weight: 700;
+          color: #ee721a;
+        }
+      }
+    }
+  }
+}

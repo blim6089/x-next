@@ -1,6 +1,3 @@
-@import url("./font.scss");
-@import url("./common.scss");
-
 body {
   background: #ee721a;
 
@@ -12,6 +9,7 @@ body {
     .header {
       display: flex;
       align-items: center;
+      margin-bottom: 107px;
 
       span {
         width: 3px;

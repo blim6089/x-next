@@ -1,3 +1,4 @@
+@import url("./font.scss");
 body {
   margin: 0;
 }
@@ -44,4 +45,92 @@ p {
   border-radius: 45px;
   box-shadow: 17.077px 8.329px 43.5px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
+}
+
+.wizard .wizard-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 123px 20px 52px;
+}
+.wizard .wizard-header span {
+  width: 1px;
+  height: 98px;
+  background: #434343;
+  margin: 0 52px;
+}
+.wizard .wizard-steps {
+  background-color: #f1f1f1;
+  padding: 62px 60px 69px;
+  display: flex;
+  justify-content: center;
+}
+.wizard .wizard-steps .wizard-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 48px;
+  position: relative;
+  padding-bottom: 80px;
+}
+.wizard .wizard-steps .wizard-step:last-child::after {
+  display: none;
+}
+.wizard .wizard-steps .wizard-step::after {
+  content: "";
+  position: absolute;
+  width: 96px;
+  border: 1px dashed #374955;
+  top: 80px;
+  left: 158px;
+}
+.wizard .wizard-steps .wizard-step .icon {
+  width: 158px;
+  height: 158px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #374955;
+  position: relative;
+}
+.wizard .wizard-steps .wizard-step .icon .plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fff;
+  border: 3px solid #ee721a;
+  top: 0;
+  right: 20px;
+}
+.wizard .wizard-steps .wizard-step .icon .active {
+  display: none;
+}
+.wizard .wizard-steps .wizard-step .label {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  font-size: 25px;
+  line-height: 50px;
+  color: #374955;
+  bottom: 0;
+}
+.wizard .wizard-steps .wizard-step.active .icon {
+  background-color: #ffffff;
+  border: 3px solid #ee721a;
+}
+.wizard .wizard-steps .wizard-step.active .icon .active {
+  display: inline;
+}
+.wizard .wizard-steps .wizard-step.active .icon .normal {
+  display: none;
+}
+.wizard .wizard-steps .wizard-step.active .label {
+  font-weight: 700;
+  color: #ee721a;
 }/*# sourceMappingURL=common.css.map */

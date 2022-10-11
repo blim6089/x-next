@@ -1,0 +1,115 @@
+@import url("./common.scss");
+
+.wizard-body {
+  display: flex;
+  justify-content: center;
+  padding: 98px 40px;
+
+  .bundle-card {
+    width: 350px;
+    height: 416px;
+    border-radius: 20px 20px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 19px;
+    color: #374955;
+    background-color: #f1f1f1;
+    padding-top: 45px;
+    position: relative;
+
+    .ribbons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+
+      .left {
+        position: absolute;
+        top: 36px;
+        left: -13px;
+      }
+
+      .right {
+        position: absolute;
+        top: 36px;
+        right: -13px;
+        transform: rotateY(180deg);
+      }
+    }
+
+    .name {
+      font-size: 38px;
+      line-height: 38px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .capped {
+      font-size: 25px;
+      line-height: 25px;
+      font-weight: 500;
+      margin-bottom: 48px;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      span {
+        &:first-child {
+          font-size: 50px;
+          line-height: 50px;
+          font-weight: 700;
+          margin-right: 12px;
+        }
+
+        &:last-child {
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .features {
+      height: 42px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: center;
+    }
+
+    .expire-date {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    .select {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 78px;
+      border-radius: 40px;
+      border-top-right-radius: 0;
+      border: none;
+      background: #ee721a;
+      font-size: 23px;
+      line-height: 47px;
+      color: #fefefe;
+      font-weight: 700;
+    }
+
+    &.active {
+      background-color: #ee721a;
+      color: #fff;
+
+      .select {
+        background: #374955;
+      }
+    }
+  }
+}
