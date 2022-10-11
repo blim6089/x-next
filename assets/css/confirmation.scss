@@ -2,21 +2,31 @@
 
 .wizard-body {
   display: flex;
-  justify-content: center;
-  padding: 98px 40px;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+
+  .title {
+    font-size: 38px;
+    line-height: 40px;
+    color: #374955;
+    font-weight: 700;
+    margin-bottom: 47px;
+  }
 
   .bundle-card {
     width: 350px;
-    height: 416px;
-    border-radius: 20px 20px 40px 40px;
+    min-height: 380px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 19px;
-    color: #374955;
-    background-color: #f1f1f1;
+    background-color: #ee721a;
+    color: #fff;
     padding-top: 45px;
     position: relative;
+    margin-bottom: 88px;
 
     .ribbons {
       position: absolute;
@@ -86,33 +96,49 @@
       font-size: 18px;
       line-height: 18px;
     }
+  }
 
-    .select {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 78px;
-      border-radius: 40px;
-      border-top-right-radius: 0;
-      border: none;
-      background: #ee721a;
-      font-size: 23px;
-      line-height: 47px;
-      color: #fefefe;
-      font-weight: 700;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  .agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 66px;
+    
+    input {
+      width: 40px;
+      height: 40px;
+      margin-right: 30px;
     }
 
-    &.active {
-      background-color: #ee721a;
-      color: #fff;
+    p {
+      font-size: 29px;
+      line-height: 50px;
+      color: #374955;
 
-      .select {
-        background: #374955;
+      a {
+        font-weight: 700;
+        color: #ee721a;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .actions {
+    margin: 0 -24px;
+
+    a {
+      width: 350px;
+      height: 80px;
+      margin: 0 24px;
+
+      &.back {
+        border: 2px solid #374955;
+        font-size: 23px;
+        color: #374955;
+      }
+
+      &.buy {
+        font-size: 23px;
+        font-weight: 700;
       }
     }
   }

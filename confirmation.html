@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/common.css" />
-    <link rel="stylesheet" href="./assets/css/bundle.css" />
+    <link rel="stylesheet" href="./assets/css/confirmation.css" />
   </head>
   <body>
     <div class="wizard">
@@ -28,7 +28,7 @@
           </div>
           <span class="label">Bundle Section</span>
         </div>
-        <div class="wizard-step">
+        <div class="wizard-step active">
           <div class="icon">
             <img
               src="./assets/images/confirmation-active.png"
@@ -70,7 +70,8 @@
         </div>
       </div>
       <div class="wizard-body">
-        <div class="bundle-card active">
+        <p class="title">Confirmation your selection</p>
+        <div class="bundle-card">
           <div class="ribbons">
             <img src="./assets/images/ribbon.png" class="left" alt="" />
             <img src="./assets/images/ribbon.png" class="right" alt="" />
@@ -83,46 +84,18 @@
           </div>
           <div class="features">-</div>
           <p class="expire-date">Bundle valid for 183 days</p>
-          <a href="./confirmation.html" class="select">Select</a>
         </div>
-        <div class="bundle-card">
-          <p class="name">25M 03 Day</p>
-          <p class="capped">Uncapped</p>
-          <div class="value">
-            <span>R 12</span>
-            <span>Incl<br />VAT</span>
-          </div>
-          <div class="features">-</div>
-          <p class="expire-date">Bundle valid for 182 days</p>
-          <a href="./confirmation.html" class="select">Select</a>
+        <div class="agree">
+          <input type="checkbox" />
+          <p>
+            I understand, accept and agree to the
+            <a href="#">privacy statement</a> and all
+            <a href="#">terms & conditions</a>
+          </p>
         </div>
-        <div class="bundle-card">
-          <p class="name">25M 01 Day</p>
-          <p class="capped">Uncapped</p>
-          <div class="value">
-            <span>R 10</span>
-            <span>Incl<br />VAT</span>
-          </div>
-          <div class="features">
-            <p>25mbps Upload</p>
-            <p>143mbps Download</p>
-          </div>
-          <p class="expire-date">Bundle valid for 182 days</p>
-          <a href="./confirmation.html" class="select">Select</a>
-        </div>
-        <div class="bundle-card">
-          <p class="name">25M 15 Day</p>
-          <p class="capped">Uncapped</p>
-          <div class="value">
-            <span>R 45</span>
-            <span>Incl<br />VAT</span>
-          </div>
-          <div class="features">
-            <p>25mbps Upload</p>
-            <p>143mbps Download</p>
-          </div>
-          <p class="expire-date">Bundle valid for 182 days</p>
-          <a href="./confirmation.html" class="select">Select</a>
+        <div class="actions">
+          <a href="./bundle.html" class="btn back">Go back</a>
+          <a href="./otp.html" class="btn btn-warning buy">Buy now</a>
         </div>
       </div>
     </div>
