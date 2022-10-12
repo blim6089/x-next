@@ -144,6 +144,10 @@
 .wizard-body .container #card-payment .card-info > div > div img {
   margin-right: 36px;
 }
+.wizard-body .container #card-payment .actions {
+  display: flex;
+  justify-content: center;
+}
 .wizard-body .container #card-payment .actions a {
   width: 354px;
   height: 81px;

@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading</title>
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/loading.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./assets/images/x-next-dark.png" alt="" />
+        <span></span>
+        <img src="./assets/images/open-serve-dark.png" alt="" />
+      </div>
+      <div class="card">
+        <p class="title">Activating your bundle</p>
+        <div class="progress">
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        location.href = "./success.html";
+      }, 2900);
+    </script>
+  </body>
+</html>

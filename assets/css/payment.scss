@@ -173,6 +173,9 @@
       }
 
       .actions {
+        display: flex;
+        justify-content: center;
+        
         a {
           width: 354px;
           height: 81px;

@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  max-width: 819px;
+  margin: 123px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 43px;
+
+    span {
+      width: 2px;
+      height: 98px;
+      background: #434343;
+      margin: 0 52px;
+    }
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 98px 80px;
+
+    .title {
+      font-size: 38px;
+      color: #ee721a;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 46px;
+    }
+
+    .progress {
+      width: 100%;
+      height: 33px;
+      border-radius: 16px;
+      background-color: #ffffff;
+      border: 0.6px solid #dddddd;
+      padding: 5px;
+
+      & > div {
+        width: 0%;
+        height: 21px;
+        border-radius: 10px;
+        background-color: #ee721a;
+        animation-name: progress;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

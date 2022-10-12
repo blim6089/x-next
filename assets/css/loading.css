@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  max-width: 819px;
+  margin: 123px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 43px;
+}
+.container .header span {
+  width: 2px;
+  height: 98px;
+  background: #434343;
+  margin: 0 52px;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 98px 80px;
+}
+.container .card .title {
+  font-size: 38px;
+  color: #ee721a;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.container .card .progress {
+  width: 100%;
+  height: 33px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 0.6px solid #dddddd;
+  padding: 5px;
+}
+.container .card .progress > div {
+  width: 0%;
+  height: 21px;
+  border-radius: 10px;
+  background-color: #ee721a;
+  -webkit-animation-name: progress;
+          animation-name: progress;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}/*# sourceMappingURL=loading.css.map */
