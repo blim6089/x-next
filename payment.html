@@ -1,0 +1,166 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/common.css" />
+    <link rel="stylesheet" href="./assets/css/payment.css" />
+  </head>
+  <body>
+    <div class="wizard">
+      <div class="wizard-header">
+        <img src="./assets/images/x-next-dark.png" alt="" />
+        <span></span>
+        <img src="./assets/images/open-serve-dark.png" alt="" />
+      </div>
+      <div class="wizard-steps">
+        <div class="wizard-step active">
+          <div class="icon">
+            <img
+              src="./assets/images/bundle-active.png"
+              class="active"
+              alt=""
+            />
+            <div class="plus">
+              <img src="./assets/images/plus.png" alt="" />
+            </div>
+          </div>
+          <span class="label">Bundle Section</span>
+        </div>
+        <div class="wizard-step active">
+          <div class="icon">
+            <img
+              src="./assets/images/confirmation-active.png"
+              class="active"
+              alt=""
+            />
+            <img
+              src="./assets/images/confirmation-normal.png"
+              class="normal"
+              alt=""
+            />
+          </div>
+          <span class="label">Confirmation</span>
+        </div>
+        <div class="wizard-step active">
+          <div class="icon">
+            <img
+              src="./assets/images/payment-active.png"
+              class="active"
+              alt=""
+            />
+            <img
+              src="./assets/images/payment-normal.png"
+              class="normal"
+              alt=""
+            />
+          </div>
+          <span class="label">Payment</span>
+        </div>
+        <div class="wizard-step">
+          <div class="icon">
+            <img
+              src="./assets/images/complete-normal.png"
+              class="normal"
+              alt=""
+            />
+          </div>
+          <span class="label">Complete</span>
+        </div>
+      </div>
+      <div class="wizard-body">
+        <div class="container">
+          <p class="title">Please complete payment details</p>
+          <div class="flag">
+            <div
+              class="flag-item active"
+              id="card-payment-tab"
+              target="card-payment"
+            >
+              <div>
+                <img
+                  src="./assets/images/checkbox_checked.png"
+                  class="checked"
+                />
+                <img
+                  src="./assets/images/checkbox_unchecked.png"
+                  class="unchecked"
+                />
+              </div>
+              <span>Card Payment</span>
+            </div>
+            <div
+              class="flag-item"
+              id="voucher-payment-tab"
+              target="voucher-payment"
+            >
+              <div>
+                <img
+                  src="./assets/images/checkbox_checked.png"
+                  class="checked"
+                />
+                <img
+                  src="./assets/images/checkbox_unchecked.png"
+                  class="unchecked"
+                />
+              </div>
+              <span>Voucher Payment</span>
+            </div>
+          </div>
+          <div id="card-payment" class="show">
+            <div class="card-number">
+              <div class="label">
+                <label>Card number</label>
+                <div>
+                  <img src="./assets/images/visa.png" alt="" />
+                  <img src="./assets/images/master.png" alt="" />
+                  <img src="./assets/images/american-express.png" alt="" />
+                  <img src="./assets/images/maestro.png" alt="" />
+                  <img src="./assets/images/paypal.png" alt="" />
+                </div>
+              </div>
+              <div class="input-container">
+                <input type="text" placeholder="1234 5678 9012 3456" />
+                <div><img src="./assets/images/master-lg.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="card-info">
+              <div>
+                <label for="">Expiry date</label>
+                <div>
+                  <input type="text" placeholder="MM/YY" />
+                </div>
+              </div>
+              <div>
+                <label for="">CVV/CVC</label>
+                <div>
+                  <input type="text" placeholder="123" />
+                  <img src="./assets/images/card.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn-warning">Pay R12</a>
+              <a href="./confirmation.html" class="btn back">Go back</a>
+            </div>
+          </div>
+          <div id="voucher-payment">
+            <div class="voucher">
+              <label>Voucher code</label>
+              <div>
+                <input type="text" placeholder="X6RgzCXb" />
+                <button>Redeem</button>
+              </div>
+              <div class="tag">
+                <img src="./assets/images/tag.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

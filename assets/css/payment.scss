@@ -1,0 +1,262 @@
+.wizard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 85px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 897px;
+
+    .title {
+      font-size: 38px;
+      line-height: 50px;
+      color: #374955;
+      font-weight: 700;
+      margin-bottom: 77px;
+    }
+
+    .flag {
+      display: flex;
+      margin: 0 -44px;
+
+      .flag-item {
+        display: flex;
+        align-items: center;
+        margin: 0 44px;
+        cursor: pointer;
+
+        span {
+          font-size: 27px;
+          line-height: 50px;
+          color: #374955;
+        }
+
+        & > div {
+          margin-right: 15px;
+
+          img.checked {
+            display: none;
+          }
+        }
+
+        &.active {
+          & > div {
+            img.checked {
+              display: inline;
+            }
+
+            img.unchecked {
+              display: none;
+            }
+          }
+
+          span {
+            color: #ee721a;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    #card-payment {
+      display: none;
+      margin-top: 105px;
+
+      &.show {
+        display: block;
+      }
+
+      .card-number {
+        width: 100%;
+        margin-bottom: 52px;
+
+        .label {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+
+          label {
+            font-size: 25px;
+            line-height: 50px;
+            color: #374955;
+            font-weight: 500;
+          }
+        }
+
+        .input-container {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 81px;
+          border-radius: 40px;
+          background-color: #ffffff;
+          border: 2px solid #dddddd;
+          overflow: hidden;
+
+          input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 21px;
+            letter-spacing: 1px;
+            line-height: 50px;
+            color: #999999;
+            font-weight: 500;
+            padding: 0 50px;
+          }
+
+          & > div {
+            padding: 0 36px;
+            height: 48px;
+            border-left: 2px solid #dddddd;
+          }
+        }
+      }
+
+      .card-info {
+        width: 100%;
+        display: flex;
+        margin-bottom: 62px;
+
+        & > div {
+          width: 100%;
+
+          &:first-child {
+            margin-right: 29px;
+          }
+
+          &:last-child {
+            margin-left: 29px;
+          }
+
+          label {
+            font-size: 25px;
+            line-height: 50px;
+            color: #374955;
+            font-weight: 500;
+            margin-bottom: 20px;
+          }
+
+          & > div {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 81px;
+            border-radius: 40px;
+            background-color: #ffffff;
+            border: 2px solid #dddddd;
+            overflow: hidden;
+
+            input {
+              width: 100%;
+              height: 100%;
+              border: none;
+              outline: none;
+              font-size: 21px;
+              letter-spacing: 1px;
+              line-height: 50px;
+              color: #999999;
+              font-weight: 500;
+              padding: 0 50px;
+            }
+
+            img {
+              margin-right: 36px;
+            }
+          }
+        }
+      }
+
+      .actions {
+        a {
+          width: 354px;
+          height: 81px;
+          margin: 0 23px;
+        }
+
+        .back {
+          font-size: 23px;
+          line-height: 47px;
+          color: #374955;
+          width: 351px;
+          border: 2px solid #374955;
+        }
+      }
+    }
+
+    #voucher-payment {
+      width: 100%;
+      margin-top: 85px;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+
+      .voucher {
+        width: 100%;
+        padding: 58px 44px;
+        border-radius: 20px;
+        background-color: #f1f1f1;
+        border: 3px dashed #dddddd;
+        position: relative;
+        overflow: hidden;
+
+        label {
+          font-size: 25px;
+          color: #374955;
+          font-weight: 500;
+          margin-bottom: 30px;
+          display: inline-block;
+        }
+
+        & > div {
+          input {
+            width: 417px;
+            height: 81px;
+            border-radius: 40px;
+            background-color: #ffffff;
+            border: 2px solid #dddddd;
+            margin-right: 17px;
+            padding: 0 40px;
+            font-size: 21px;
+            letter-spacing: 1px;
+            line-height: 50px;
+            color: #999999;
+            font-weight: 500;
+          }
+
+          button {
+            width: 237px;
+            height: 81px;
+            border-radius: 40px;
+            background-color: #ee721a;
+            font-size: 21px;
+            letter-spacing: 1px;
+            line-height: 50px;
+            color: #ffffff;
+            font-weight: 500;
+            border: none;
+          }
+        }
+
+        .tag {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: -0;
+          right: -0;
+          width: 196px;
+          height: 70px;
+          background-color: #ee721a;
+        }
+      }
+    }
+  }
+}

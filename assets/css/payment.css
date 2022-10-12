@@ -1,0 +1,219 @@
+.wizard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 85px;
+}
+.wizard-body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 897px;
+}
+.wizard-body .container .title {
+  font-size: 38px;
+  line-height: 50px;
+  color: #374955;
+  font-weight: 700;
+  margin-bottom: 77px;
+}
+.wizard-body .container .flag {
+  display: flex;
+  margin: 0 -44px;
+}
+.wizard-body .container .flag .flag-item {
+  display: flex;
+  align-items: center;
+  margin: 0 44px;
+  cursor: pointer;
+}
+.wizard-body .container .flag .flag-item span {
+  font-size: 27px;
+  line-height: 50px;
+  color: #374955;
+}
+.wizard-body .container .flag .flag-item > div {
+  margin-right: 15px;
+}
+.wizard-body .container .flag .flag-item > div img.checked {
+  display: none;
+}
+.wizard-body .container .flag .flag-item.active > div img.checked {
+  display: inline;
+}
+.wizard-body .container .flag .flag-item.active > div img.unchecked {
+  display: none;
+}
+.wizard-body .container .flag .flag-item.active span {
+  color: #ee721a;
+  font-weight: 700;
+}
+.wizard-body .container #card-payment {
+  display: none;
+  margin-top: 105px;
+}
+.wizard-body .container #card-payment.show {
+  display: block;
+}
+.wizard-body .container #card-payment .card-number {
+  width: 100%;
+  margin-bottom: 52px;
+}
+.wizard-body .container #card-payment .card-number .label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.wizard-body .container #card-payment .card-number .label label {
+  font-size: 25px;
+  line-height: 50px;
+  color: #374955;
+  font-weight: 500;
+}
+.wizard-body .container #card-payment .card-number .input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 81px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  overflow: hidden;
+}
+.wizard-body .container #card-payment .card-number .input-container input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #999999;
+  font-weight: 500;
+  padding: 0 50px;
+}
+.wizard-body .container #card-payment .card-number .input-container > div {
+  padding: 0 36px;
+  height: 48px;
+  border-left: 2px solid #dddddd;
+}
+.wizard-body .container #card-payment .card-info {
+  width: 100%;
+  display: flex;
+  margin-bottom: 62px;
+}
+.wizard-body .container #card-payment .card-info > div {
+  width: 100%;
+}
+.wizard-body .container #card-payment .card-info > div:first-child {
+  margin-right: 29px;
+}
+.wizard-body .container #card-payment .card-info > div:last-child {
+  margin-left: 29px;
+}
+.wizard-body .container #card-payment .card-info > div label {
+  font-size: 25px;
+  line-height: 50px;
+  color: #374955;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.wizard-body .container #card-payment .card-info > div > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 81px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  overflow: hidden;
+}
+.wizard-body .container #card-payment .card-info > div > div input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #999999;
+  font-weight: 500;
+  padding: 0 50px;
+}
+.wizard-body .container #card-payment .card-info > div > div img {
+  margin-right: 36px;
+}
+.wizard-body .container #card-payment .actions a {
+  width: 354px;
+  height: 81px;
+  margin: 0 23px;
+}
+.wizard-body .container #card-payment .actions .back {
+  font-size: 23px;
+  line-height: 47px;
+  color: #374955;
+  width: 351px;
+  border: 2px solid #374955;
+}
+.wizard-body .container #voucher-payment {
+  width: 100%;
+  margin-top: 85px;
+  display: none;
+}
+.wizard-body .container #voucher-payment.show {
+  display: block;
+}
+.wizard-body .container #voucher-payment .voucher {
+  width: 100%;
+  padding: 58px 44px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  border: 3px dashed #dddddd;
+  position: relative;
+  overflow: hidden;
+}
+.wizard-body .container #voucher-payment .voucher label {
+  font-size: 25px;
+  color: #374955;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.wizard-body .container #voucher-payment .voucher > div input {
+  width: 417px;
+  height: 81px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+  margin-right: 17px;
+  padding: 0 40px;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #999999;
+  font-weight: 500;
+}
+.wizard-body .container #voucher-payment .voucher > div button {
+  width: 237px;
+  height: 81px;
+  border-radius: 40px;
+  background-color: #ee721a;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+}
+.wizard-body .container #voucher-payment .voucher .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 196px;
+  height: 70px;
+  background-color: #ee721a;
+}/*# sourceMappingURL=payment.css.map */
