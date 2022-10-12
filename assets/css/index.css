@@ -57,6 +57,7 @@ body .container .body .actions .buy_bundle {
 body .container .body .actions .view_my_bundles {
   width: 374px;
   height: 90px;
+  border: 2px solid #FFF;
 }
 body .container .rocket {
   position: absolute;

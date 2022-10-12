@@ -1,0 +1,201 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0 0;
+}
+.container .logo {
+  width: 283px;
+  margin-bottom: 89px;
+}
+.container > .title {
+  font-size: 42px;
+  line-height: 50px;
+  color: #ee721a;
+  font-weight: 700;
+  margin-bottom: 98px;
+}
+.container .summary {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 93px;
+}
+.container .summary > img {
+  width: 450px;
+  margin-right: 80px;
+  flex-shrink: 0;
+}
+.container .summary > div > p {
+  font-size: 38px;
+  line-height: 50px;
+  color: #ee721a;
+  font-weight: 700;
+  font-family: "Poppins";
+  margin-bottom: 29px;
+}
+.container .summary > div > p span {
+  color: #434343;
+  font-weight: 400;
+}
+.container .summary > div ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 59px;
+}
+.container .summary > div ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 46px;
+}
+.container .summary > div ul li img {
+  margin-right: 15px;
+}
+.container .summary > div ul li span {
+  font-size: 25px;
+  line-height: 50px;
+  color: #374955;
+}
+.container .summary > div .tip {
+  width: 620px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  border: 2px dashed #dddddd;
+  font-size: 25px;
+  line-height: 50px;
+  color: #999999;
+  padding: 53px 45px;
+}
+.container .summary > div .tip span {
+  color: #374955;
+  font-weight: 700;
+}
+.container .bundles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 63px 60px 72px;
+  background-color: #f1f1f1;
+}
+.container .bundles > .title {
+  font-size: 42px;
+  line-height: 50px;
+  color: #374955;
+  font-weight: 700;
+  margin-bottom: 56px;
+}
+.container .bundles > div {
+  display: flex;
+}
+.container .bundles > div .bundle {
+  width: 350px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 54px;
+  position: relative;
+}
+.container .bundles > div .bundle .ribbon {
+  position: absolute;
+  top: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .bundles > div .bundle .ribbon img {
+  position: absolute;
+}
+.container .bundles > div .bundle .ribbon img.left {
+  top: 0;
+  position: absolute;
+  transform: rotateY(180deg);
+  left: -17px;
+}
+.container .bundles > div .bundle .ribbon img.right {
+  top: 0;
+  position: absolute;
+  right: -17px;
+}
+.container .bundles > div .bundle .ribbon > div {
+  position: relative;
+  z-index: 100;
+  width: 162px;
+  height: 50px;
+  background: #ee721a;
+  font-size: 21px;
+  line-height: 50px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .bundles > div .bundle .title {
+  font-size: 37px;
+  line-height: 38px;
+  color: #374955;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.container .bundles > div .bundle .description {
+  font-size: 25px;
+  line-height: 20px;
+  margin-bottom: 39px;
+  color: #374955;
+  font-weight: 500;
+}
+.container .bundles > div .bundle ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 32px;
+}
+.container .bundles > div .bundle ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 12px;
+}
+.container .bundles > div .bundle ul li img {
+  width: 11px;
+  height: 25px;
+  margin-right: 12px;
+}
+.container .bundles > div .bundle ul li span {
+  font-size: 19px;
+  line-height: 39px;
+  color: #374955;
+}
+.container .bundles > div .bundle .expire {
+  font-size: 18px;
+  color: #374955;
+}
+.container .footer {
+  width: 100%;
+  display: flex;
+  padding: 152px 343px 180px;
+  position: relative;
+}
+.container .footer .title {
+  width: 100%;
+  max-width: 680px;
+  font-size: 75px;
+  line-height: 80px;
+  color: #ee721a;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+.container .footer a {
+  width: 378px;
+  height: 94px;
+  font-weight: 700;
+}
+.container .footer > img {
+  width: 500px;
+  position: absolute;
+  top: 30px;
+  right: 300px;
+}/*# sourceMappingURL=view.css.map */
