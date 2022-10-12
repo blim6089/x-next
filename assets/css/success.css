@@ -1,0 +1,60 @@
+body {
+  background: #f1f1f1;
+}
+body .container {
+  padding: 116px 215px;
+  position: relative;
+}
+body .container .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 219px;
+}
+body .container .header img:first-child {
+  width: 225px;
+}
+body .container .header img:last-child {
+  width: 219px;
+}
+body .container .header span {
+  width: 2px;
+  height: 98px;
+  background: #434343;
+  margin: 0 52px;
+}
+body .container .body .title {
+  font-size: 100px;
+  line-height: 113px;
+  color: #ee721a;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+body .container .body .description {
+  font-size: 33px;
+  line-height: 50px;
+  color: #374955;
+  margin-bottom: 67px;
+}
+body .container .body .actions {
+  display: flex;
+  align-items: center;
+}
+body .container .body .actions a {
+  width: 377px;
+  height: 94px;
+  margin-right: 37px;
+  padding: 0;
+}
+body .container .body .actions a.browsing {
+  font-weight: 700;
+}
+body .container .success {
+  position: absolute;
+  top: 267px;
+  right: 160px;
+}
+body .cloud {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+}/*# sourceMappingURL=success.css.map */
