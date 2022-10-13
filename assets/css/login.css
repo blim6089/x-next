@@ -101,7 +101,7 @@
   display: flex;
 }
 #modal .modal-container {
-  width: 1429px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,20 +109,21 @@
   border-radius: 45px;
   box-shadow: 0.077px 8.329px 43.5px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
-  padding: 43px 103px 50px;
+  padding: 43px 80px 50px;
 }
 #modal .modal-container .info {
-  margin-bottom: 50px;
+  width: 80px;
+  margin-bottom: 20px;
 }
 #modal .modal-container .title {
-  font-size: 42px;
+  font-size: 32px;
   color: #ee721a;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 #modal .modal-container .description {
-  font-size: 25px;
-  line-height: 42px;
+  font-size: 22px;
+  line-height: 25px;
   color: #374955;
   text-align: center;
   margin-bottom: 28px;
@@ -135,24 +136,43 @@
   display: flex;
   background: #ddd;
   border-radius: 100px;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
+  position: relative;
+}
+#modal .modal-container .password span {
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  top: 22px;
+  left: 30px;
+  color: #9F9F9F;
+}
+#modal .modal-container .password img {
+  height: 70px;
 }
 #modal .modal-container .tip {
-  font-size: 25px;
-  line-height: 42px;
+  font-size: 22px;
+  line-height: 25px;
   color: #ee721a;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 #modal .modal-container .hint {
-  font-size: 25px;
-  line-height: 42px;
+  font-size: 18px;
+  line-height: 20px;
   color: #374955;
   text-align: center;
   margin-bottom: 33px;
 }
 #modal .modal-container #close {
-  width: 377px;
-  height: 86px;
+  width: 320px;
+  height: 64px;
+  font-size: 24px;
 }/*# sourceMappingURL=login.css.map */

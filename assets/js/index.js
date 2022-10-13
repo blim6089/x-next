@@ -13,7 +13,7 @@ function initialize() {
 
   var close = document.getElementById("close");
   if (close) {
-    clos.addEventListener("click", function () {
+    close.addEventListener("click", function () {
       modalClose();
     });
   }
