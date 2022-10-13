@@ -4,9 +4,21 @@
   align-items: center;
   padding: 70px 0 0;
 
-  .logo {
-    width: 283px;
+  .header {
+    display: flex;
+    align-items: center;
     margin-bottom: 89px;
+
+    span {
+      width: 2px;
+      height: 98px;
+      margin: 0 52px;
+      background: #434343;
+    }
+
+    img:last-child {
+      width: 283px;
+    }
   }
 
   & > .title {

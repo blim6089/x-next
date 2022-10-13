@@ -4,9 +4,19 @@
   align-items: center;
   padding: 70px 0 0;
 }
-.container .logo {
-  width: 283px;
+.container .header {
+  display: flex;
+  align-items: center;
   margin-bottom: 89px;
+}
+.container .header span {
+  width: 2px;
+  height: 98px;
+  margin: 0 52px;
+  background: #434343;
+}
+.container .header img:last-child {
+  width: 283px;
 }
 .container > .title {
   font-size: 42px;
