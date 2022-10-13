@@ -1,6 +1,7 @@
 @import url("./font.scss");
 body {
   margin: 0;
+  zoom: 0.7;
 }
 
 body * {
