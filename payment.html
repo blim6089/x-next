@@ -75,23 +75,6 @@
           <div class="flag">
             <div
               class="flag-item active"
-              id="card-payment-tab"
-              target="card-payment"
-            >
-              <div>
-                <img
-                  src="./assets/images/checkbox_checked.png"
-                  class="checked"
-                />
-                <img
-                  src="./assets/images/checkbox_unchecked.png"
-                  class="unchecked"
-                />
-              </div>
-              <span>Card Payment</span>
-            </div>
-            <div
-              class="flag-item"
               id="voucher-payment-tab"
               target="voucher-payment"
             >
@@ -107,8 +90,21 @@
               </div>
               <span>Voucher Payment</span>
             </div>
+            <div class="flag-item" id="card-payment-tab" target="card-payment">
+              <div>
+                <img
+                  src="./assets/images/checkbox_checked.png"
+                  class="checked"
+                />
+                <img
+                  src="./assets/images/checkbox_unchecked.png"
+                  class="unchecked"
+                />
+              </div>
+              <span>Card Payment</span>
+            </div>
           </div>
-          <div id="card-payment" class="show">
+          <div id="card-payment">
             <div class="card-number">
               <div class="label">
                 <label>Card number</label>
@@ -145,7 +141,7 @@
               <a href="./confirmation.html" class="btn back">Go back</a>
             </div>
           </div>
-          <div id="voucher-payment">
+          <div id="voucher-payment" class="show">
             <div class="voucher">
               <label>Voucher code</label>
               <div>
