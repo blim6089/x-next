@@ -18,15 +18,33 @@
         <p class="title">A one-time PIN has been sent to xxx xxx 2017</p>
         <p class="description">Please insert the provided OTP to continue.</p>
         <div class="inputs">
-          <input type="text" placeholder="5" />
-          <input type="text" placeholder="4" />
-          <input type="text" placeholder="1" />
-          <input type="text" placeholder="7" />
-          <input type="text" placeholder="0" />
+          <input type="text" id="digit-1" data-next="digit-2" />
+          <input
+            type="text"
+            id="digit-2"
+            data-next="digit-3"
+            data-previous="digit-1"
+          />
+          <input
+            type="text"
+            id="digit-3"
+            data-next="digit-4"
+            data-previous="digit-2"
+          />
+          <input
+            type="text"
+            id="digit-4"
+            data-next="digit-5"
+            data-previous="digit-3"
+          />
+          <input type="text" id="digit-5" data-previous="digit-4" />
         </div>
-        <a href="./payment.html" class="btn btn-warning continue">Continue</a>
+        <button class="btn btn-warning disabled" id="continue">Continue</button>
         <a href="#" class="resend">Resend OTP</a>
       </div>
     </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/otp-pin.js"></script>
   </body>
 </html>

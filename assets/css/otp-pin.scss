@@ -60,11 +60,16 @@
       }
     }
 
-    .continue {
+    #continue {
       width: 483px;
       height: 86px;
       font-weight: 700;
       margin-bottom: 27px;
+
+      &.disabled {
+        opacity: 0.7;
+        pointer-events: none;
+      }
     }
 
     .resend {

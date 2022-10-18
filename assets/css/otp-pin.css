@@ -54,11 +54,15 @@
   font-weight: 700;
   margin: 0 4px;
 }
-.container .card .continue {
+.container .card #continue {
   width: 483px;
   height: 86px;
   font-weight: 700;
   margin-bottom: 27px;
+}
+.container .card #continue.disabled {
+  opacity: 0.7;
+  pointer-events: none;
 }
 .container .card .resend {
   font-size: 25px;
