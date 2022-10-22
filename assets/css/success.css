@@ -57,4 +57,9 @@ body .cloud {
   width: 100%;
   height: 210px;
   overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+body .cloud img {
+  width: 100%;
 }/*# sourceMappingURL=success.css.map */
